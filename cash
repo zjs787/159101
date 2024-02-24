@@ -1,0 +1,18 @@
+#include <iostream>
+#include <iomanip>
+using namespace std; 
+
+int price_i, temp; 
+double price_d, pay; 
+
+int main(void)
+{
+    cout << "Enter the price: "; 
+    cin >> price_d; 
+    cout << "The price on the item is " << price_d << endl; 
+    price_i = price_d * 100;  
+    temp = (price_i + 5) / 10; 
+    temp = temp * 10; 
+    pay = temp / 100; 
+    cout << fixed << setprecision(2) << "I must pay cash of " << pay; 
+}
